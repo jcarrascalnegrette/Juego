@@ -29,22 +29,22 @@ mongoose
 var Juegos = require("./lib01/Juego");
 
 app.get("/Juegos", (req, res) => {
-  Juegos.getJuegos(req, res);
+  Juegos.getJuego(req, res);
 });
 
 app.get("/Juegos/:id", (req, res) => {
-  Juegos.getJuegos(req, res);
+  Juegos.getJuego(req, res);
 });
 
 app.post("/Juegos", (req, res) => {
-  Juegos.newJuegos(req, res);
+  Juegos.newJuego(req, res);
 });
 app.put("/agendas/:id", (req, res) => {
-  Juegos.updateJuegos(req, res);
+  Juegos.updateJuego(req, res);
 });
 
 app.delete("/Juegos/:id", (req, res) => {
-  Juegos.deleteJuegos(req, res);
+  Juegos.deleteJuego(req, res);
 });
 
 // escuchamos
